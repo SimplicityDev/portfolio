@@ -8,12 +8,21 @@ import * as routes from '../constants/routes';
 const Navigation = () =>
     <div className="navigation">
         <AuthUserContext.Consumer>
+            <Brand/>
             {authUser => authUser
                 ? <NavigationAuth />
                 : <NavigationNonAuth />
             }
         </AuthUserContext.Consumer>
     </div>
+
+const Brand = () => {
+    <Link to={routes.LANDING}>
+        <h3>
+            {"<Mike Donkers />"}
+        </h3>
+    </Link>
+}
 
 const NavigationAuth = () =>
     <ul>
