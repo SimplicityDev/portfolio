@@ -1,9 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import AuthUserContext from './AuthUserContext';
-import SignOutButton from './SignOut';
-import * as routes from '../constants/routes';
 import SideBar from './SideBar';
 
 class Navigation extends React.Component {
@@ -28,20 +23,5 @@ class Navigation extends React.Component {
         )
     }
 }
-const Brand = () => 
-    <Link to={routes.LANDING}>
-        <h3>
-            {"<Mike Donkers />"}
-        </h3>
-    </Link>
-
-const NavigationNonAuth = () =>
-    <div>
-        <Brand/>
-        <ul>
-            <li><Link to={routes.LANDING}>Landing</Link></li>
-            <li><Link to={routes.SIGN_IN}>Sign In</Link></li>
-        </ul>
-    </div>
 
 export default Navigation;

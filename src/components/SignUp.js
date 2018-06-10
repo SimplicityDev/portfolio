@@ -54,9 +54,6 @@ class SignUpForm extends Component {
 
     render() {
         const {
-            history,
-        } = this.props;
-        const {
             username,
             email,
             passwordOne,
