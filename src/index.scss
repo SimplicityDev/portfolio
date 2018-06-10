@@ -149,6 +149,9 @@ a {
     left:50%;
     width:30vw;
     transform: translateX(-50%);
+    @include for-phone-only {
+        width:90vw
+    }
     &.show {
         opacity: 1;
         padding:20px;
