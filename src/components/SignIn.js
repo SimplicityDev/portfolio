@@ -5,7 +5,7 @@ import { SignUpLink } from './SignUp';
 import { PasswordForgetLink } from './PasswordForget';
 import { auth } from '../firebase';
 import * as routes from '../constants/routes';
-
+import Error from './Error'
 const SignInPage = ({ history }) =>
     <div>
         <h1>SignIn</h1>
@@ -30,7 +30,11 @@ class SignInForm extends Component {
 
         this.state = { ...INITIAL_STATE };
     }
-
+    _unMountError = () => {
+        this.setState({
+            error: false
+        })
+    }
     onSubmit = (event) => {
         const {
             email,
@@ -82,7 +86,7 @@ class SignInForm extends Component {
                     Sign In
         </button>
 
-                {error && <p>{error.message}</p>}
+                {error && <Error message={error.message} unMountError={this._unMountError}/>}
             </form>
         );
     }

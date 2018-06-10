@@ -136,6 +136,43 @@ a {
         }
     }
 }
+.alert {
+    background-color: #f44336;
+    color: white;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    padding:0;
+    height:0;
+    position: fixed;
+    z-index: 10001;
+    bottom: 20px;
+    left:50%;
+    width:30vw;
+    transform: translateX(-50%);
+    &.show {
+        opacity: 1;
+        padding:20px;
+        height:auto;
+    }
+    &.hide {
+        opacity: 0;
+        padding:0;
+        height:0;
+    }
+    .closebtn {
+        margin-left: 15px;
+        color: white;
+        font-weight: bold;
+        float: right;
+        font-size: 22px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            color: black;
+        }
+    }
+}
 .link {
     &:hover {
         text-decoration: underline;
