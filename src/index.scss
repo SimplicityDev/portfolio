@@ -1,16 +1,149 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
+$primary-color: #ff0000;
+$link-color: #0080ff;
 body {
     margin: 0;
+    color: black;
     padding:0;
+    font-family: Slate
+}
+a {
+    text-decoration: none;
+    color: inherit
 }
 .navigation {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     background:#111111;
     ul {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: flex-end;
     }
+}
+
+.navbar {
+    width:100vw;
+    height:75px;
+    line-height: 75px;
+    vertical-align: middle;
+    background:#111111;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    #brand {
+        font-size:1.3em;
+        padding: 0 20px;
+        color:$primary-color;
+        transition: all .5s ease-in-out;
+        word-wrap:nowrap;
+        white-space: nowrap;
+        &:hover {
+            cursor:pointer;
+            color:white;
+        }
+    }
+    ul {
+        margin:0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+        flex-grow: 1;
+        
+        white-space: nowrap;
+        li {
+            padding:0px 20px 0px 0px;
+            color:rgba(255,255,255,0.5);
+            transition: all .5s ease-in-out;
+            font-size: 1.1em;
+            &:hover {
+                cursor:pointer;
+                color:white;
+            }
+        }
+    }
+}
+.sidebar {
+    @include for-phone-only {
+        width: 100vw;
+    }
+    width:350px;
+    height: 100vh;
+    position: fixed;
+    transition: all .5s ease-in-out;
+    top:0;
+    right: 0;
+    background-color:#111111;
+    z-index: 10001;
+    .closeButton {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        i {
+            color: rgba(255,255,255,0.5);
+            transition: all .5s ease-in-out;
+            font-size: 2rem;
+            margin:20px 20px 10px 20px;
+            &:hover {
+                cursor:pointer;
+                color:white;
+            }
+        }
+    }
+    ul {
+        list-style-type: none;
+        max-width:270px;
+        div {
+            li {
+                a {
+                    text-decoration: none;
+                    color: rgba(255,255,255,0.5);
+                    &:hover {
+                        cursor:pointer;
+                        color:white;
+                    }
+                }   
+            }
+        }
+        li {
+            padding:20px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            color: rgba(255,255,255,0.5);
+            transition: all .5s ease-in-out;
+            &:hover {
+                cursor:pointer;
+                color:white;
+            }
+            
+        }
+    }
+}
+.link {
+    &:hover {
+        text-decoration: underline;
+    }
+    color: $link-color;
+
+}
+
+@font-face {
+    font-family: Slate;
+    src: url(/Slate.ttf)
 }

@@ -4,34 +4,36 @@ import { Link } from 'react-router-dom';
 import AuthUserContext from './AuthUserContext';
 import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
+import SideBar from './SideBar';
 
-const Navigation = () =>
-    <div className="navigation">
-        <AuthUserContext.Consumer>            {authUser => authUser
-                ? <NavigationAuth />
-                : <NavigationNonAuth />
-            }
-        </AuthUserContext.Consumer>
-    </div>
-
-const Brand = () => {
+class Navigation extends React.Component {
+    state = {
+        open: false
+    }
+    _handleClick = () => {
+        this.setState({ open: !this.state.open })
+    }
+    render() {
+        const { open } = this.state
+        return (
+            <div>
+                <div className="navbar">
+                    <span id="brand">{"<Mike Donkers />"}</span>
+                    <ul>
+                        <li onClick={this._handleClick}><i className="fa fa-bars" /> Menu</li>
+                    </ul>
+                </div>
+                <SideBar open={open} handleClick={this._handleClick} />
+            </div>
+        )
+    }
+}
+const Brand = () => 
     <Link to={routes.LANDING}>
         <h3>
             {"<Mike Donkers />"}
         </h3>
     </Link>
-}
-
-const NavigationAuth = () =>
-    <div>
-        <Brand />
-        <ul>
-            <li><Link to={routes.LANDING}>Landing</Link></li>
-            <li><Link to={routes.HOME}>Home</Link></li>
-            <li><Link to={routes.ACCOUNT}>Account</Link></li>
-            <li><SignOutButton /></li>
-        </ul>
-    </div>
 
 const NavigationNonAuth = () =>
     <div>

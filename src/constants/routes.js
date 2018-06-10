@@ -1,6 +1,9 @@
-export const SIGN_UP = '/portfolio/signup';
-export const SIGN_IN = '/portfolio/signin';
-export const LANDING = '/portfolio/';
-export const HOME = '/portfolio/home';
-export const ACCOUNT = '/portfolio/account';
-export const PASSWORD_FORGET = '/portfolio/pw-forget';
+const generateRoute = (route) => 
+    `/portfolio/${route}`
+
+export const SIGN_UP = generateRoute('signup');
+export const SIGN_IN = generateRoute('signin');
+export const LANDING = generateRoute('');
+export const HOME = generateRoute('home');
+export const ACCOUNT = generateRoute('account');
+export const PASSWORD_FORGET = generateRoute('pw-forget');

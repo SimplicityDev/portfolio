@@ -1,14 +1,107 @@
 body {
   margin: 0;
-  padding: 0; }
+  color: black;
+  padding: 0;
+  font-family: Slate; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
 
 .navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #111111; }
   .navigation ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: flex-end; }
+
+.navbar {
+  width: 100vw;
+  height: 75px;
+  line-height: 75px;
+  vertical-align: middle;
+  background: #111111;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; }
+  .navbar #brand {
+    font-size: 1.3em;
+    padding: 0 20px;
+    color: #ff0000;
+    transition: all .5s ease-in-out;
+    word-wrap: nowrap;
+    white-space: nowrap; }
+    .navbar #brand:hover {
+      cursor: pointer;
+      color: white; }
+  .navbar ul {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    flex-grow: 1;
+    white-space: nowrap; }
+    .navbar ul li {
+      padding: 0px 20px 0px 0px;
+      color: rgba(255, 255, 255, 0.5);
+      transition: all .5s ease-in-out;
+      font-size: 1.1em; }
+      .navbar ul li:hover {
+        cursor: pointer;
+        color: white; }
+
+.sidebar {
+  width: 350px;
+  height: 100vh;
+  position: fixed;
+  transition: all .5s ease-in-out;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  z-index: 10001; }
+  @media (max-width: 599px) {
+    .sidebar {
+      width: 100vw; } }
+  .sidebar .closeButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; }
+    .sidebar .closeButton i {
+      color: rgba(255, 255, 255, 0.5);
+      transition: all .5s ease-in-out;
+      font-size: 2rem;
+      margin: 20px 20px 10px 20px; }
+      .sidebar .closeButton i:hover {
+        cursor: pointer;
+        color: white; }
+  .sidebar ul {
+    list-style-type: none;
+    max-width: 270px; }
+    .sidebar ul div li a {
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.5); }
+      .sidebar ul div li a:hover {
+        cursor: pointer;
+        color: white; }
+    .sidebar ul li {
+      padding: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.5);
+      transition: all .5s ease-in-out; }
+      .sidebar ul li:hover {
+        cursor: pointer;
+        color: white; }
+
+.link {
+  color: #0080ff; }
+  .link:hover {
+    text-decoration: underline; }
+
+@font-face {
+  font-family: Slate;
+  src: url(/Slate.ttf); }
