@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
 import AuthUserContext from './AuthUserContext';
+import PropTypes from 'prop-types';
 const PrivateLinks = (props) => (
     <div>
         <li><Link onClick={props.handleClick} to={routes.LANDING}>Home</Link></li>
@@ -34,5 +35,9 @@ class SideBar extends Component {
             </AuthUserContext.Consumer>
         )
     }
+}
+SideBar.contextTypes = {
+    changeLocale: PropTypes.any,
+    locale: PropTypes.string
 }
 export default SideBar

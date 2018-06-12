@@ -1,0 +1,4 @@
+{
+    "app.title": "Hallo, ik ben <span id='name'>{who}</span>.<br/>",
+    "app.intro": "Ik ben een aspirerend web-/app developer."
+}
