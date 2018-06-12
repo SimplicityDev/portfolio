@@ -3,7 +3,8 @@ body {
   margin: 0;
   color: black;
   padding: 0;
-  font-family: 'Roboto'; }
+  font-family: 'Roboto';
+  -webkit-overflow-scrolling: touch; }
 
 a {
   text-decoration: none;
@@ -13,7 +14,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: #111111; }
+  background: #1B242F; }
   .navigation ul {
     display: flex;
     flex-direction: row;
@@ -21,24 +22,38 @@ a {
     align-items: flex-end; }
 
 .navbar {
-  width: 100vw;
+  width: 100%;
   height: 75px;
   line-height: 75px;
   vertical-align: middle;
-  background: #111111;
+  background: #1B242F;
+  border-bottom: 3px solid #04c2c9;
+  position: fixed;
+  z-index: 10000;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly; }
   .navbar #brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     font-size: 1.3em;
+    height: 75px;
+    line-height: 75px;
+    vertical-align: middle;
     padding: 0 20px;
-    color: #ff0000;
+    color: #04c2c9;
     transition: all .5s ease-in-out;
     word-wrap: nowrap;
     white-space: nowrap; }
+    .navbar #brand span {
+      padding: 0 10px; }
+    .navbar #brand #logo {
+      height: 60px;
+      margin-top: 7.5px; }
     .navbar #brand:hover {
       cursor: pointer;
-      color: white; }
+      color: #E31B6D; }
   .navbar ul {
     margin: 0;
     display: flex;
@@ -49,12 +64,68 @@ a {
     white-space: nowrap; }
     .navbar ul li {
       padding: 0px 20px 0px 0px;
-      color: rgba(255, 255, 255, 0.5);
+      color: white;
       transition: all .5s ease-in-out;
       font-size: 1.1em; }
+      .navbar ul li a.is-active {
+        color: #E31B6D; }
       .navbar ul li:hover {
         cursor: pointer;
-        color: white; }
+        color: #E31B6D; }
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background-color: #1B242F; }
+  .hero #particles-js {
+    position: absolute;
+    left: 0;
+    height: calc(100vh - 75px);
+    width: 100vw;
+    max-width: 100%; }
+  .hero .intro {
+    font-size: 3rem;
+    color: white;
+    max-width: inherit; }
+    @media (max-width: 599px) {
+      .hero .intro {
+        font-size: 2rem; } }
+    .hero .intro #name {
+      color: #E31B6D; }
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  .heading h1 {
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase; }
+  .heading .bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    background: #1B242F;
+    width: 70px;
+    height: 4px; }
+
+.about {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .about .section_heading {
+    width: 100%; }
 
 .sidebar {
   width: 350px;
@@ -63,7 +134,7 @@ a {
   transition: all .5s ease-in-out;
   top: 0;
   right: 0;
-  background-color: #111111;
+  background-color: #1B242F;
   z-index: 10001; }
   @media (max-width: 599px) {
     .sidebar {
@@ -73,7 +144,7 @@ a {
     flex-direction: row;
     justify-content: flex-end; }
     .sidebar .closeButton i {
-      color: rgba(255, 255, 255, 0.5);
+      color: white;
       transition: all .5s ease-in-out;
       font-size: 2rem;
       margin: 20px 20px 10px 20px; }
@@ -85,14 +156,14 @@ a {
     max-width: 270px; }
     .sidebar ul div li a {
       text-decoration: none;
-      color: rgba(255, 255, 255, 0.5); }
+      color: white; }
       .sidebar ul div li a:hover {
         cursor: pointer;
         color: white; }
     .sidebar ul li {
       padding: 20px;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-      color: rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid white;
+      color: white;
       transition: all .5s ease-in-out; }
       .sidebar ul li:hover {
         cursor: pointer;
@@ -113,7 +184,7 @@ a {
   transform: translateX(-50%); }
   @media (max-width: 599px) {
     .alert {
-      width: 90vw; } }
+      width: 80vw; } }
   .alert.show {
     opacity: 1;
     padding: 20px;

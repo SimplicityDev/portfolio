@@ -32,7 +32,7 @@ class Error extends React.Component {
         return (
             <div className={classes}>
                 <span className="closebtn" onClick={this._handleCloseClick}>&times;</span>
-                <strong>Error!</strong> {this.props.message}
+                <strong>Error!</strong> {message}
             </div>
         )
     }

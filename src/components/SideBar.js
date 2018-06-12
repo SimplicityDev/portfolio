@@ -8,8 +8,7 @@ import * as routes from '../constants/routes';
 import AuthUserContext from './AuthUserContext';
 const PrivateLinks = (props) => (
     <div>
-        <li><Link onClick={props.handleClick} to={routes.LANDING}>Landing</Link></li>
-        <li><Link onClick={props.handleClick}to={routes.HOME}>Home</Link></li>
+        <li><Link onClick={props.handleClick} to={routes.LANDING}>Home</Link></li>
         <li><Link onClick={props.handleClick}to={routes.ACCOUNT}>Account</Link></li>
         <li><SignOutButton onClick={props.handleLogout} /></li>
     </div>
