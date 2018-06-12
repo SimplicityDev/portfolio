@@ -15,7 +15,7 @@ class Navigation extends React.Component {
         return (
             <div>
                 <div className="navbar">
-                    <NavLink to={routes.LANDING} id="brand"><img id="logo" src="/logo.svg" alt="logo" />{!isMobile && <span>Mike Donkers</span>}</NavLink>
+                    <NavLink to={routes.LANDING} id="brand"><img id="logo" src="/portfolio/logo.svg" alt="logo" />{!isMobile && <span>Mike Donkers</span>}</NavLink>
                     {isMobile && 
                         <ul>
                             <li onClick={this._handleClick}><i className="fa fa-bars" /> Menu</li>

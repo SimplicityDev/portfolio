@@ -7,7 +7,7 @@ import 'particles.js/particles';
 class Particles extends React.Component {
     componentDidMount() {
         const particlesJS = window.particlesJS;
-        particlesJS.load('particles-js', '/particles.json', function () {
+        particlesJS.load('particles-js', '/portfolio/particles.json', function () {
             console.log('callback - particles.js config loaded');
         });
     }
