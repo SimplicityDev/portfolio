@@ -29,6 +29,8 @@ a {
   background: #1B242F;
   border-bottom: 3px solid #04c2c9;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 10000;
   display: flex;
   flex-direction: row;

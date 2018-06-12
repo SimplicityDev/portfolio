@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Particles from 'react-particles-js';
-
+import { isMobile } from 'react-device-detect'
 
 class Particle extends React.Component {
     render() {
@@ -10,7 +10,7 @@ class Particle extends React.Component {
                 params={{
                     "particles": {
                         "number": {
-                            "value": 80,
+                            "value": isMobile ? 20 : 80,
                             "density": {
                                 "enable": true,
                                 "value_area": 800
