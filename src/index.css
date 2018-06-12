@@ -83,7 +83,7 @@ a {
   align-content: center;
   text-align: center;
   background-color: #1B242F; }
-  .hero #particles-js {
+  .hero .particles-js {
     position: absolute;
     left: 0;
     height: calc(100vh - 75px);
