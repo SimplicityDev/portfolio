@@ -163,7 +163,7 @@ const languages = [
         "knowledge": 80
     },
     {
-        "name": "Javascript",
+        "name": "JS",
         "knowledge": 60
     },
     {
@@ -193,7 +193,9 @@ const Skills = () =>
                     <div className="label">
                         {language.name}
                     </div>
-                    <progress max="100" value={language.knowledge} data-label={`${language.knowledge}%`}></progress>
+                    <div className="progress" data-progress={`${language.knowledge}%`} data-label={language.name}>
+                        <div className="inner" style={{ width: `${language.knowledge}%`}}></div>
+                    </div>
                 </div>
             )}
         </div>
