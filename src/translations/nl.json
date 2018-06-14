@@ -1,4 +1,20 @@
 {
     "app.title": "Hallo, ik ben <span id='name'>{who}</span>.<br/>",
-    "app.intro": "Ik ben een aspirerend web-/app developer."
+    "app.intro": "Ik ben een aspirerend web-/app developer.",
+    "about.title": "Over mij",
+    "beliefs.heading": "Waar ik voor sta",
+    "skill.speed.title": "Snelheid",
+    "skill.speed.desc": "Als we het hebben over snelheid, dan is mijn ideaal een snel ladende, vloeiende ervaring voor elke gebruiker. Welke platform dan ook, welke verbinding dan ook. Natuurlijk is dit niet altijd toe te passen, maar dit weerhoud mij er niet van om ervoor te werken dat de ervaring in de meeste gevallen is zoals voorgaand beschreven.",
+    "skill.dynamic.title": "Dynamiek",
+    "skill.dynamic.desc": "Wie houdt er niet van een applicatie waar de content dynamisch aangepast wordt, of het nou gebruiker specifiek, of algemene informatie is. Dynamische content is prachtig, persoonlijk ben ik geen fan van statische pagina's, wat als er iets veranderd? Wat als het wel veranderd, maar het wordt getoond op een statische pagina? Gaan we de gebruiker echt lastig vallen met het compleet herladen van de pagina? Ik dacht van niet. Als je het mij vraagt, is dynamische contect het pad vooruit.",
+    "skill.inventive.title": "Inventief",
+    "skill.inventive.desc": "Ik ben een groot voorstander van 'state-of-the-art' technieken om ervoor te zorgen dat de applicatie niet alleen veilig is, maar ook altijd makkelijker wordt in gebruik. Dit zal niet alleen invloed hebben op de bezoeker, maar zo zal ook het werklading van de programmeur te verlichten. Met de huidige 'latest and greatest' technieken, focussen op herbuikbaarheid en uitbreidbaarheid van de applicatie. Al deze correct worden opgezet, zal dit op de lange termijn de programmeur een hoop tijd en moeite schelen.",
+    "skill.responsive.title": "Responsive",
+    "skill.responsive.desc": "Tegenwoordig kom je er niet mee weg om een applicatie alleen maar compatibel te maken met computers en er klaar mee te zijn. Nee, tegenwoordig maak je ze voor elk apparaat wat deze applicatie maar kan openen. Desktops, laptops, telefoons, tablets, zelf smartwatches doen mee. All deze apparaten hebben een andere oppervlakte op welk ze de applicaite kunnen tonen, hier ligt de uitdaging. Deze uitdaging is dan dus ook 'Hoe zorg ik ervoor dat deze applicatie op alle apparaten correct te bekijken is?'. Het antwoord is simpel, responsive ontwerp. Een ontzettend leuke uitdaging als je het mij vraagt.",
+    "app.me.who": "Wie is dit?",
+    "app.me.about": "Ik ben een {age} jarige met een passie voor alles omtrend ontwikkeling, of het nou ontwikkeling is om de werklading voor mezelf te verminderen, of de ontwikkeling van een prachtige applicatie.",
+    "programming.languages.title": "Programmeer talen",
+    "interests.heading": "Interesse om te leren",
+    "navigation.home": "Home",
+    "navigation.login": "Inloggen"
 }

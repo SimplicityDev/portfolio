@@ -1,4 +1,20 @@
 {
     "app.title": "Hello, I'm <span id='name'>{who}</span>.<br/>",
-    "app.intro": "I'm an aspiring web-/app developer."
+    "app.intro": "I'm an aspiring web-/app developer.",
+    "about.title": "About",
+    "beliefs.heading": "My beliefs",
+    "skill.speed.title": "Speed",
+    "skill.speed.desc": "When talking about speed, my personal ideal is a fast loading, lag free experience for every user. Whatever their client, whatever their connection. Ofcourse, this only applies to a certain extent, but it won't keep me from working towards an experience as described before for at least most of the cases.",
+    "skill.dynamic.title": "Dynamic",
+    "skill.dynamic.desc": "Who doesn't love a application where they can dynamically change what the user sees, be it user specific or be it general information. Dynamic content is beautiful, I personally, highly dislike static pages, what if something changes? What if it's dynamic, but is displayed on a static page? Are we really going to reload the entire thing? Let's not. Dynamic content is the way to go if you ask me.",
+    "skill.inventive.title": "Inventive",
+    "skill.inventive.desc": "I'm a huge supporter of the use of state-of-the-art techniques to ensure a secure and easy-to-use application. Not only will this contribute to the client, but also to the workload of a programmer. If set up correctly, the latest and greatest techniques focus on reusability and extendability. Which in the long term, will save a programmer a lot of time and effort.",
+    "skill.responsive.title": "Responsive",
+    "skill.responsive.desc": "Nowadays, you can't just make a website compatible with computers and be done with it. No sir, nowadays, you make them for every device thinkable. Desktops, laptops, phones, tablets even smartwatches are joining in on the fun. All these devices have a different surface area on which they can display a website, which is where the challenge lies, this being: ``How do I make sure this application is visible across all devices?``. The answer is simple, responsivesness. A lovely challenge if you ask me. ",
+    "app.me.who": "Who is this guy?",
+    "app.me.about": "I'm a {age} year old with a passion for development, be it development to make the work easier for myself, for others or development towards building beautiful things.",
+    "programming.languages.title": "Programming languages",
+    "interests.heading": "Interested in learning",
+    "navigation.home": "Home",
+    "navigation.login": "Log in"
 }

@@ -32,7 +32,7 @@ class App extends React.Component {
       <TranslationProvider>
         <TranslationContext.Consumer>
           {({ locale, changeLocale }) => (
-            <IntlProvider locale={locale} messages={messages[locale]}>
+            <IntlProvider locale={locale} messages={messages[locale]} defaultMessage={messages_en}>
             <Router>
               <div>
                 <Navigation />
