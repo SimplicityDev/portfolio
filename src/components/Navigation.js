@@ -17,7 +17,7 @@ class Navigation extends React.Component {
         return (
             <div>
                 <div className="navbar">
-                    <NavLink to={routes.LANDING} id="brand"><img id="logo" src="./logo.svg" alt="logo" />{!isMobile && <span>Mike Donkers</span>}</NavLink>
+                    <NavLink to={routes.LANDING} id="brand"><img id="logo" src="/logo.svg" alt="logo" />{!isMobile && <span>Mike Donkers</span>}</NavLink>
                     {isMobile &&
                         <ul>
                         <li className="noSelect" onClick={this.context.changeLocale}>
