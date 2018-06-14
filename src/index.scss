@@ -405,7 +405,8 @@ a {
                     }
                     progress {
                         position: relative;
-                        &:before {
+                        color: darken($primary-color, 10%);
+                        &::before {
                             content: attr(data-label);
                             font-size: 1rem;
                             padding:10px;
@@ -525,8 +526,8 @@ a {
                     height: 57.74px;
                     margin: 28.87px 0;
                 }
-                &:before,
-                &:after {
+                &::before,
+                &::after {
                     content: "";
                     position: absolute;
                     width: 0;
@@ -543,7 +544,7 @@ a {
                     }
                 }
                 
-                &:before {
+                &::before {
                     bottom: 100%;
                     border-bottom: 57.74px solid $primary-color;
                     @include for-phone-only {
@@ -554,7 +555,7 @@ a {
                     }
                 }
                 
-                &:after {
+                &::after {
                     top: 100%;
                     width: 0;
                     border-top: 57.74px solid $primary-color;
@@ -655,14 +656,14 @@ a {
     position: relative;
     padding-left: 20px;
     padding-bottom: 10px;
-    &:before, &:after {
+    &::before, &::after {
         content: "";
         position: absolute;
         bottom: -3px;
         left: -3px;
         
     }
-    &:before {
+    &::before {
         top: -3px;
         width: 3px;
         background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(transparent));
@@ -670,7 +671,7 @@ a {
         background-image: -moz-linear-gradient(transparent, #000);
         background-image: -o-linear-gradient(transparent, #000);
     }
-    &:after {
+    &::after {
         right: -3px;
         height: 3px;
         background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));

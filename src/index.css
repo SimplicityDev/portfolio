@@ -336,8 +336,9 @@ a {
                 width: 75%; } }
           .flex .me .skills .languages .language progress {
             position: relative;
+            color: #039297;
             background-color: #eee; }
-            .flex .me .skills .languages .language progress:before {
+            .flex .me .skills .languages .language progress::before {
               content: attr(data-label);
               font-size: 1rem;
               padding: 10px;
@@ -430,7 +431,7 @@ a {
             width: 100px;
             height: 57.74px;
             margin: 28.87px 0; } }
-        .flex .beliefs .skill .hexagon:before, .flex .beliefs .skill .hexagon:after {
+        .flex .beliefs .skill .hexagon::before, .flex .beliefs .skill .hexagon::after {
           content: "";
           position: absolute;
           width: 0;
@@ -438,31 +439,31 @@ a {
           border-left: 100px solid transparent;
           border-right: 100px solid transparent; }
           @media only screen and (max-width: 599px) {
-            .flex .beliefs .skill .hexagon:before, .flex .beliefs .skill .hexagon:after {
+            .flex .beliefs .skill .hexagon::before, .flex .beliefs .skill .hexagon::after {
               border-left: 50px solid transparent;
               border-right: 50px solid transparent; } }
           @media only screen and (min-width: 600px) {
-            .flex .beliefs .skill .hexagon:before, .flex .beliefs .skill .hexagon:after {
+            .flex .beliefs .skill .hexagon::before, .flex .beliefs .skill .hexagon::after {
               border-left: 50px solid transparent;
               border-right: 50px solid transparent; } }
-        .flex .beliefs .skill .hexagon:before {
+        .flex .beliefs .skill .hexagon::before {
           bottom: 100%;
           border-bottom: 57.74px solid #04c2c9; }
           @media only screen and (max-width: 599px) {
-            .flex .beliefs .skill .hexagon:before {
+            .flex .beliefs .skill .hexagon::before {
               border-bottom: 28.87px solid #04c2c9; } }
           @media only screen and (min-width: 600px) {
-            .flex .beliefs .skill .hexagon:before {
+            .flex .beliefs .skill .hexagon::before {
               border-bottom: 28.87px solid #04c2c9; } }
-        .flex .beliefs .skill .hexagon:after {
+        .flex .beliefs .skill .hexagon::after {
           top: 100%;
           width: 0;
           border-top: 57.74px solid #04c2c9; }
           @media only screen and (max-width: 599px) {
-            .flex .beliefs .skill .hexagon:after {
+            .flex .beliefs .skill .hexagon::after {
               border-top: 28.87px solid #04c2c9; } }
           @media only screen and (min-width: 600px) {
-            .flex .beliefs .skill .hexagon:after {
+            .flex .beliefs .skill .hexagon::after {
               border-top: 28.87px solid #04c2c9; } }
         .flex .beliefs .skill .hexagon i, .flex .beliefs .skill .hexagon span {
           z-index: 9;
@@ -540,19 +541,19 @@ a {
   position: relative;
   padding-left: 20px;
   padding-bottom: 10px; }
-  .bot-left:before, .bot-left:after {
+  .bot-left::before, .bot-left::after {
     content: "";
     position: absolute;
     bottom: -3px;
     left: -3px; }
-  .bot-left:before {
+  .bot-left::before {
     top: -3px;
     width: 3px;
     background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#000), to(transparent));
     background-image: -webkit-linear-gradient(transparent, #000);
     background-image: -moz-linear-gradient(transparent, #000);
     background-image: -o-linear-gradient(transparent, #000); }
-  .bot-left:after {
+  .bot-left::after {
     right: -3px;
     height: 3px;
     background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#000), to(transparent));
