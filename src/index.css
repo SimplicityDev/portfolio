@@ -336,7 +336,7 @@ a {
                 width: 75%; } }
           .flex .me .skills .languages .language progress {
             position: relative;
-            background-color: #039297; }
+            background-color: #eee; }
             .flex .me .skills .languages .language progress:before {
               content: attr(data-label);
               font-size: 1rem;
@@ -351,7 +351,9 @@ a {
             .flex .me .skills .languages .language progress::-webkit-progress-value {
               background-color: #039297; }
             .flex .me .skills .languages .language progress::-moz-progress-bar {
-              background-color: #eee; }
+              background-color: #039297; }
+            .flex .me .skills .languages .language progress::-moz-progress-value {
+              background-color: #039297; }
           .flex .me .skills .languages .language .percentage {
             text-align: right;
             flex-grow: 1;
