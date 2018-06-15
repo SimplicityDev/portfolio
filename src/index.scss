@@ -39,13 +39,6 @@ h2 {
     text-align: center;
     font-weight:400;
 }
-.mugshot {
-    width:200px;
-    height:225px;
-    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-    background-image: url(/me.jpeg);
-    background-size:cover;
-}
 .noSelect {
     -webkit-overflow-scrolling: touch;
     -webkit-tap-highlight-color: transparent;
@@ -353,6 +346,13 @@ a {
                     width:175px;
                     height:175px;
                 }
+            }
+            .mugshot {
+                width:200px;
+                height:225px;
+                clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+                background-image: url(/portfolio/me.jpeg);
+                background-size:cover;
             }
             p {
                 width: 350px;
