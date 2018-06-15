@@ -21,6 +21,14 @@ $secondary-color: #00FF78;
 $highlight-color: #E31B6D;
 $link-color: #0080ff;
 $background-color: #1B242F;
+*{
+    &::selection {
+        background: $highlight-color; /* WebKit/Blink Browsers */
+    }
+    &::-moz-selection {
+        background: $highlight-color; /* Gecko Browsers */
+    }
+}
 body {
     margin: 0;
     color: black;
@@ -555,6 +563,23 @@ a {
                     }
                 }
             }      
+        }
+    }
+}
+.educations {
+    width:90%;
+    margin: 0 auto;
+    .wrapper {
+        display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+        .edu {
+            display:flex;
+            flex-flow: column wrap;
+            justify-content: space-around;
+            .logo {
+                height:25%;
+            }
         }
     }
 }

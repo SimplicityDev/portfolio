@@ -7,6 +7,7 @@ import SignOutButton from './SignOut';
 import * as routes from '../constants/routes';
 import AuthUserContext from './AuthUserContext';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 const PrivateLinks = (props) => (
     <div>
         <li><Link onClick={props.handleClick} to={routes.LANDING}>Home</Link></li>
@@ -25,7 +26,7 @@ class SideBar extends Component {
                             <i className="fa fa-times" onClick={handleClick}></i>
                         </div>
                         <ul>
-                            {!authUser ? <div><li><Link onClick={handleClick} to={routes.SIGN_IN}>Sign In</Link></li></div> : <PrivateLinks handleClick={handleClick} handleLogout={auth.doSignOut} />}
+                            {!authUser ? <div><li><Link onClick={handleClick} to={routes.SIGN_IN}><FormattedMessage id="navigation.login" defaultMessage="Log in" /></Link></li></div> : <PrivateLinks handleClick={handleClick} handleLogout={auth.doSignOut} />}
                             <div>
                                 <li><Link to='/contact'>Contact</Link></li>
                             </div>

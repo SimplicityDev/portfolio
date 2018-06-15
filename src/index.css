@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,400,700");
+*::selection {
+  background: #E31B6D;
+  /* WebKit/Blink Browsers */ }
+
+*::-moz-selection {
+  background: #E31B6D;
+  /* Gecko Browsers */ }
+
 body {
   margin: 0;
   color: black;
@@ -456,6 +464,20 @@ a {
           @media only screen and (min-width: 600px) {
             .flex .beliefs .skill .hexagon i, .flex .beliefs .skill .hexagon span {
               font-size: 3rem; } }
+
+.educations {
+  width: 90%;
+  margin: 0 auto; }
+  .educations .wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around; }
+    .educations .wrapper .edu {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-around; }
+      .educations .wrapper .edu .logo {
+        height: 25%; }
 
 @keyframes ani-mouse {
   0% {

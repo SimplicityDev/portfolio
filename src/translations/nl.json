@@ -12,9 +12,10 @@
     "skill.responsive.title": "Responsive",
     "skill.responsive.desc": "Tegenwoordig kom je er niet mee weg om een applicatie alleen maar compatibel te maken met computers en er klaar mee te zijn. Nee, tegenwoordig maak je ze voor elk apparaat wat deze applicatie maar kan openen. Desktops, laptops, telefoons, tablets, zelf smartwatches doen mee. All deze apparaten hebben een andere oppervlakte op welk ze de applicaite kunnen tonen, hier ligt de uitdaging. Deze uitdaging is dan dus ook 'Hoe zorg ik ervoor dat deze applicatie op alle apparaten correct te bekijken is?'. Het antwoord is simpel, responsive ontwerp. Een ontzettend leuke uitdaging als je het mij vraagt.",
     "app.me.who": "Wie is dit?",
-    "app.me.about": "Ik ben een {age} jarige met een passie voor alles omtrend ontwikkeling, of het nou ontwikkeling is om de werklading voor mezelf te verminderen, of de ontwikkeling van een prachtige applicatie.",
+    "app.me.about": "Ik ben een {age} jarige met een passie voor alles omtrend ontwikkeling, of het nou ontwikkeling is om de werklading voor mezelf of anderen, te verminderen, of de ontwikkeling van een prachtige applicatie.",
     "programming.languages.title": "Programmeer talen",
     "interests.heading": "Interesse om te leren",
     "navigation.home": "Home",
-    "navigation.login": "Inloggen"
+    "navigation.login": "Inloggen",
+    "education.heading": "Opleiding"
 }
